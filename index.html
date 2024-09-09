@@ -1,0 +1,40 @@
+<!DOCTYPE html> <!-- Indica ao navegador que o documento é uma página HTML5. -->
+<html lang="pt-br"> <!-- Define o idioma principal da página, auxiliando na indexação e acessibilidade. -->
+
+<head> <!-- inicia a cabeça do arquivo html -->
+    <meta charset="UTF-8">
+    <!-- Especifica o conjunto de caracteres utilizado na página, permitindo a exibição correta de diferentes idiomas. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para dispositivos móveis -->
+    <link rel="stylesheet" href="style.css"> <!-- Liga o arquivo CSS externo -->
+
+    <!-- Define o título da página -->
+    <title>Raças de Cachorro</title>
+</head>
+
+<body> <!-- inicia o corpo do html -->
+    <header>
+        <h1>Tudo sobre raças de cães</h1> <!-- titulo -->
+        <main>
+            <!-- Agrupa elementos relacionados, como o formulário de pesquisa e a seção de resultados. -->
+            <section>
+
+                <!-- Criam elementos do formulário para entrada de dados e envio. -->
+                <input type="text" placeholder="Digite qual raça você deseja encontrar:" id="campo-pesquisa">
+                <button onclick="pesquisar()">Pesquisar</button>
+            </section>
+            <section class="resultados-pesquisa" id="resultados-pesquisa">
+            </section>
+        </main>
+
+        <footer> <!-- Inicio do rodapé  -->
+            <p>2024 - Raças de cachorro. Todos os direitos reservados</p>
+            <p>Entre em contato pelo E-mial: EvilynSilva14@outlook.com</p>
+        </footer> <!-- fim do rodapé -->
+
+        <!-- Inclui arquivos JavaScript externos para adicionar interatividade à página. -->
+        <script src="dados.js"></script>
+        <script src="app.js"></script>
+</body>
+
+</html>
